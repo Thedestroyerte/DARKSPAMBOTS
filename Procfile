@@ -1,1 +1,1 @@
-TheAltron: python -m main.py
+DARK: python -m main.py
