@@ -2,7 +2,7 @@
 
 <h4 align="center"> 𝐀 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋 𝐒𝐏𝐀𝐌𝐁𝐎𝐓𝐒</h4>
 
-<p align="center"><a href="https://t.me/DARK_4ST"><img src="https://graph.org/file/3717c65774f81e680a34f.jpg" width="400"></a></p>
+<p align="center"><a href="https://t.me/DARK_4ST"><img src="https://graph.org/file/49311c24881d844837e1b.jpg" width="400"></a></p>
 
 
 > ⭐️ Thanks to everyone for using this op DARKXBOTS. That is the greatest pleasure we have !
