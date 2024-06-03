@@ -3,7 +3,7 @@ import logging
 from telethon import TelegramClient
 
 from os import getenv
-from DarkBots.data import DARK
+from AltBots.data import DARK
 
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', level=logging.WARNING)
