@@ -34,7 +34,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://graph.org/file/b340af8f2ad1c4ee358c3.jpg",
+              "https://graph.org/file/1d0123acb82c0498ab036.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -142,7 +142,7 @@ async def helpback(event):
             ]
           )
     else:
-        await event.answer("Make Your Own Altron Bots !! @DARK_4ST", cache_time=0, alert=True)
+        await event.answer("𝗣𝗘𝗛𝗟𝗘 𝗝𝗔𝗞𝗘  @DARK_4ST", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
