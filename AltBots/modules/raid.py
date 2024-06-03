@@ -39,7 +39,7 @@ async def raid(e):
             elif uid == OWNER_ID:
                 await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴛᴇʀᴀ ᴅᴀʀᴋ ᴅᴀᴅʏ ʜᴀɪ.")
             elif uid in SUDO_USERS:
-                await e.reply("ᴀʙᴇ..ɪs ʟᴀᴡᴅᴇ ᴋᴇ ᴘᴀᴀs ᴘᴇʜʟᴇ sᴇ sᴜᴅᴏ ʜᴀɪ.")
+                await e.reply("__ᴅᴀʀᴋ ᴋᴀ ᴇᴋ ɴᴇᴡ ʙᴇᴛᴀ ᴀᴅᴅ ʜᴜᴀ ʜᴀɪ...__.")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
