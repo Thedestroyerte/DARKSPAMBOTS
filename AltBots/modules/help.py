@@ -142,7 +142,7 @@ async def helpback(event):
             ]
           )
     else:
-        await event.answer("𝗣𝗘𝗛𝗟𝗘 𝗝𝗔𝗞𝗘  @DARK_4ST", cache_time=0, alert=True)
+        await event.answer("𝗣𝗘𝗛𝗟𝗘 𝗝𝗔𝗞𝗘 ⚡️𝗗𝗔𝗥𝗞⚡️ 𝗞𝗢 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗪𝗢𝗛 𝗧𝗨𝗠𝗛𝗘 𝗦𝗨𝗗𝗢 𝗗𝗘 𝗗𝗘𝗚𝗔 @DARK_4ST", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -161,7 +161,7 @@ async def help_spam(event):
               buttons=[[Button.inline("< Back", data="help_back"),],],
               ) 
     else:
-        await event.answer("Make Your Own Dark Bots !! @DARK_4ST", cache_time=0, alert=True)
+        await event.answer("𝗣𝗘𝗛𝗟𝗘 𝗝𝗔𝗞𝗘 ⚡️𝗗𝗔𝗥𝗞⚡️ 𝗞𝗢 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗪𝗢𝗛 𝗧𝗨𝗠𝗛𝗘 𝗦𝗨𝗗𝗢 𝗗𝗘 𝗗𝗘𝗚𝗔 @DARK_4ST", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -180,7 +180,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("Make Your Own Dark Bots !! @DARK_4ST", cache_time=0, alert=True)
+        await event.answer("𝗣𝗘𝗛𝗟𝗘 𝗝𝗔𝗞𝗘 ⚡️𝗗𝗔𝗥𝗞⚡️ 𝗞𝗢 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗪𝗢𝗛 𝗧𝗨𝗠𝗛𝗘 𝗦𝗨𝗗𝗢 𝗗𝗘 𝗗𝗘𝗚𝗔 @DARK_4ST", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -199,4 +199,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("Make Your Own Dark Bots !! @DARK_4ST", cache_time=0, alert=True)
+        await event.answer("𝗣𝗘𝗛𝗟𝗘 𝗝𝗔𝗞𝗘 ⚡️𝗗𝗔𝗥𝗞⚡️ 𝗞𝗢 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗪𝗢𝗛 𝗧𝗨𝗠𝗛𝗘 𝗦𝗨𝗗𝗢 𝗗𝗘 𝗗𝗘𝗚𝗔 @DARK_4ST", cache_time=0, alert=True)
