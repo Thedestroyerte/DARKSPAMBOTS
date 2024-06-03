@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
+        await e.reply(f"`ʙᴋʟ ʀᴇʙᴏᴏᴛ ᴛᴏʜ ʜᴏɴᴇ ᴅᴇ ᴄʜᴀᴍᴀʀ...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -99,7 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"» __ᴀᴅᴅɪɴɢ ᴜꜱᴇʀ ᴀꜱ ꜱᴜᴅᴏ...__")
+        ok = await event.reply(f"» __ᴅᴀʀᴋ ᴋᴀ ᴇᴋ ɴᴇᴡ ʙᴇᴛᴀ ᴀᴅᴅ ʜᴜᴀ ʜᴀɪ...__")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -113,18 +113,18 @@ async def addsudo(event):
             reply_msg = await event.get_reply_message()
             target = reply_msg.sender_id
         except:
-            await ok.edit("» ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ !!")
+            await ok.edit("» ᴍᴀᴅᴀʀᴄʜᴏᴅ ᴀʙ ʀᴇᴘʟʏ ᴋᴀʀ ᴜsᴇʀ ᴘᴇ")
             return
 
         if str(target) in sudousers:
-            await ok.edit(f"ᴛʜɪꜱ ᴜꜱᴇʀ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ !!")
+            await ok.edit(f"ɪs ʟᴀᴡᴅᴇ ᴋᴇ ᴘᴀᴀs ᴘᴇʜʟᴇ sᴇ sᴜᴅᴏ ʜᴀɪ")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴏᴛ...`")
+            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `ʜᴀᴛᴛ ɢᴀɴᴅᴜ ᴛʜᴏᴅɪ ᴅᴇʀ ᴀᴜʀ ɢᴀᴀɴᴅ ᴍᴀʀɴᴇ ᴅᴇᴛᴀ😖😁...`")
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» ꜱᴏʀʀʏ, ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.")
+        await event.reply("» ʏᴇ,ʙᴀss ᴛᴇʀᴀ ᴘᴀᴘᴀ ᴅᴀʀᴋ ᴋᴀʀʀ sᴀᴋᴛᴀ ʜᴀɪ.")
