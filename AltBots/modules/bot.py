@@ -24,7 +24,7 @@ async def ping(e):
         altron = await e.reply(f"» __ᴀʟᴛʀᴏɴ__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"⚡️𝗞𝗜𝗦𝗞𝗜 𝗚𝗔𝗔𝗡𝗗 𝗠𝗔𝗜𝗡 𝗞𝗛𝗨𝗝𝗟𝗜 𝗛𝗢 𝗥𝗔𝗛𝗜 𝗛𝗔𝗜⚡️_\n» `{mp} ᴍꜱ`")
+        await altron.edit(f"⚡️𝗞𝗜𝗦𝗞𝗜 𝗚𝗔𝗔𝗡𝗗 𝗠𝗔𝗥𝗡𝗜 𝗛𝗔𝗜 𝗠𝗔𝗦𝗧𝗘𝗥⚡️_\n» `{mp} ᴍꜱ`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`ʙᴋʟ ʀᴇʙᴏᴏᴛ ᴛᴏʜ ʜᴏɴᴇ ᴅᴇ ᴄʜᴀᴍᴀʀ...`")
+        await e.reply(f"`ʜᴀᴛᴛ ɢᴀɴᴅᴜ ᴛʜᴏᴅɪ ᴅᴇʀ ᴀᴜʀ ɢᴀᴀɴᴅ ᴍᴀʀɴᴇ ᴅᴇᴛᴀ😖😁...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -117,7 +117,7 @@ async def addsudo(event):
             return
 
         if str(target) in sudousers:
-            await ok.edit(f"ɪs ʟᴀᴡᴅᴇ ᴋᴇ ᴘᴀᴀs ᴘᴇʜʟᴇ sᴇ sᴜᴅᴏ ʜᴀɪ")
+            await ok.edit(f"__ᴅᴀʀᴋ ᴋᴀ ᴇᴋ ɴᴇᴡ ʙᴇᴛᴀ ᴀᴅᴅ ʜᴜᴀ ʜᴀɪ...__")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
