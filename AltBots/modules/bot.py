@@ -21,7 +21,7 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"» __ᴀʟᴛʀᴏɴ__")
+        altron = await e.reply(f"» __ᴅᴀʀᴋ x sᴘᴀᴍ__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
         await altron.edit(f"⚡️ᛕIᔕᛕI Ǥᗩᗩᑎᗪ ᗰᗩᖇᑎI ᕼᗩI ᗷᗝᔕᔕ⚡️_\n» `{mp} ᴍꜱ`")
