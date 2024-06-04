@@ -35,9 +35,9 @@ async def raid(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴛᴇʀᴀ ᴅᴀᴅʏ ᴅᴀʀᴋ ʜᴀɪ.")
+                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴅᴀʀᴋ ᴋᴀ ʙᴇᴛᴀ ʜᴀɪ ʙɪʟᴋᴜʟ ᴛᴇʀɪ ᴛᴀʀᴀʜ.")
             elif uid == OWNER_ID:
-                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴛᴇʀᴀ ᴅᴀʀᴋ ᴅᴀᴅʏ ʜᴀɪ.")
+                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴅᴀʀᴋ ᴋᴀ ʙᴇᴛᴀ ʜᴀɪ ʙɪʟᴋᴜʟ ᴛᴇʀɪ ᴛᴀʀᴀʜ.")
             elif uid in SUDO_USERS:
                 await e.reply("__ᴅᴀʀᴋ ᴋᴀ ᴇᴋ ɴᴇᴡ ʙᴇᴛᴀ ᴀᴅᴅ ʜᴜᴀ ʜᴀɪ...__.")
             else:
@@ -100,11 +100,11 @@ async def rraid(e):
         try:
             user_id = entity.id
             if user_id in ALTRON:
-                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴛᴇʀᴀ ᴅᴀᴅʏ ᴅᴀʀᴋ ʜᴀɪ.")
+                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴅᴀʀᴋ ᴋᴀ ʙᴇᴛᴀ ʜᴀɪ ʙɪʟᴋᴜʟ ᴛᴇʀɪ ᴛᴀʀᴀʜ.")
             elif user_id == OWNER_ID:
                 await e.reply("ᴀʀᴇ.")
             elif user_id in SUDO_USERS:
-                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴛᴇʀᴀ ᴅᴀᴅʏ ᴅᴀʀᴋ ʜᴀɪ.")
+                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴅᴀʀᴋ ᴋᴀ ʙᴇᴛᴀ ʜᴀɪ ʙɪʟᴋᴜʟ ᴛᴇʀɪ ᴛᴀʀᴀʜ.")
             else:
                 global REPLY_RAID
                 check = f"{user_id}_{e.chat_id}"
@@ -246,9 +246,9 @@ async def craid(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴛᴇʀᴀ ᴅᴀᴅʏ ᴅᴀʀᴋ ʜᴀɪ.")
+                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴅᴀʀᴋ ᴋᴀ ʙᴇᴛᴀ ʜᴀɪ ʙɪʟᴋᴜʟ ᴛᴇʀɪ ᴛᴀʀᴀʜ.")
             elif uid == OWNER_ID:
-                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴛᴇʀᴀ ᴅᴀᴅʏ ᴅᴀʀᴋ ʜᴀɪ.")
+                await e.reply("ᴀʀᴇ..ʏᴇ ᴛᴏʜ ᴅᴀʀᴋ ᴋᴀ ʙᴇᴛᴀ ʜᴀɪ ʙɪʟᴋᴜʟ ᴛᴇʀɪ ᴛᴀʀᴀʜ.")
             elif uid in SUDO_USERS:
                 await e.reply("ᴀʙᴇ..ɪs ʟᴀᴡᴅᴇ ᴋᴇ ᴘᴀᴀs ᴘᴇʜʟᴇ sᴇ sᴜᴅᴏ ʜᴀɪ.")
             else:
