@@ -27,3 +27,5 @@
 <a href="https://t.me/+mDjKa2gljxpmZTZl"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
 </details>
+
+[**ᴅᴀʀᴋ**](https://t.me/DARK_4ST) 🌿🌿
