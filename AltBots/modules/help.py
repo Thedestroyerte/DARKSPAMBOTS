@@ -91,6 +91,10 @@ raid_msg = f"""
   1) {hl}craid <count> <username>
   2) {hl}craid <count> <reply to user>
 
+𝐇𝐑𝐚𝐢𝐝: **ʜɪɴᴅɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ.**
+  1) {hl}hraid <count> <username>
+  2) {hl}hraid <count> <reply to user>
+
 
 **© @DARK_4ST**
 """
