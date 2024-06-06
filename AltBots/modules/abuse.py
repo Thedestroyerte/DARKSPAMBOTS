@@ -42,3 +42,17 @@ async def abuse(e):
             await e.reply(f"{hl}ᴀʙᴜꜱᴇ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
             print(e)
+
+            else:
+                first_name = entity.first_name
+                counter = int(xraid[1])
+                username = f"[{first_name}](tg://user?id={uid})"
+                for _ in range(counter):
+                    reply = choice(HRAID)
+                    caption = f"{username} {reply}"
+                    await e.client.send_message(e.chat_id, caption)
+                    await asyncio.sleep(0.1)
+        except (IndexError, ValueError, NameError):
+            await e.reply(f"{hl}ʜʀᴀɪᴅ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+        except Exception as e:
+            print(e)
