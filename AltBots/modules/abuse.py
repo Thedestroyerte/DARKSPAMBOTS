@@ -3,7 +3,7 @@ from random import choice
 from telethon import events
 from telethon import events, functions, types
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
-from AltBots.data import ABUSE, HRAID,
+from AltBots.data import ABUSE, HRAID, BDAY,
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sabuse(?: |$)(.*)" % hl))
@@ -72,7 +72,7 @@ async def hraid(e):
             elif uid == OWNER_ID:
                 await e.reply("ɴᴏᴘᴇ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ 🤖")
             elif uid in SUDO_USERS:
-                await e.reply("ɴᴏᴘᴇ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ꜱᴜᴅᴏ ᴜꜱᴇʀ 🫂")
+                await e.reply("ᴀʀᴇ ʙʜᴀɪ ɪsᴋᴇ ᴘᴀᴀs ʙʜɪ sᴜᴅᴏ ʜᴀɪ 🫂")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
@@ -86,3 +86,55 @@ async def hraid(e):
             await e.reply(f"{hl}ʜʀᴀɪᴅ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
             print(e)
+
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X2.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X3.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X4.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X5.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X6.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X7.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X8.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X9.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+@X10.on(events.NewMessage(incoming=True, pattern=r"\%sbspam(?: |$)(.*)" % hl))
+async def bday(e):
+     if e.sender_id in SUDO_USERS:
+        xraid = e.text.split(" ", 2)
+
+        if len(xraid) == 3:
+            entity = await e.client.get_entity(xraid[2])
+            uid = entity.id
+
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            entity = await e.client.get_entity(a.sender_id)
+            uid = entity.id
+
+        try:
+            first_name = entity.first_name
+            counter = int(xraid[1])
+            username = f"[{first_name}](tg://user?id={uid})"
+            for _ in range(counter):
+                reply = choice(BDAY)
+                caption = f"{username} {reply}"
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.1)
+        except (IndexError, ValueError, NameError):
+            await e.reply(f"{hl}ʙꜱᴘᴀᴍ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
+        except Exception as e:
+            print(e)
+
+async def gifspam(e, smex):
+    try:
+        await e.client(
+            functions.messages.SaveGifRequest(
+                id=types.InputDocument(
+                    id=sandy.media.document.id,
+                    access_hash=smex.media.document.access_hash,
+                    file_reference=smex.media.document.file_reference,
+                ),
+                unsave=True,
+            )
+        )
+    except Exception:
+        pass
